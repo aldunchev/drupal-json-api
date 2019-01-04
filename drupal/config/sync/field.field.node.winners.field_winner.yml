@@ -1,0 +1,28 @@
+uuid: 99fe8309-7d7f-4387-ad00-2afe88a6a3e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_winner
+    - node.type.breakers
+    - node.type.winners
+id: node.winners.field_winner
+field_name: field_winner
+entity_type: node
+bundle: winners
+label: Winner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      breakers: breakers
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

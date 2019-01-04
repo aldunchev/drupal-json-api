@@ -1,0 +1,18 @@
+uuid: c72a4551-508e-42b0-bca4-add5493ebe77
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.breakers
+id: node.breakers.title
+field_name: title
+entity_type: node
+bundle: breakers
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

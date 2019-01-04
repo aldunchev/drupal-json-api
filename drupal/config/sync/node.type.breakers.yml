@@ -1,0 +1,17 @@
+uuid: 1e504a5a-8c19-4f5e-9d75-c56d61d81022
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Breakers
+type: breakers
+description: 'Add a BC One breaker with the relevant data.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

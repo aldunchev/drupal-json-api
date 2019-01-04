@@ -1,0 +1,19 @@
+uuid: 97eaebf0-497e-4266-bdc2-658c7d901808
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_breaking_since
+    - node.type.breakers
+id: node.breakers.field_breaking_since
+field_name: field_breaking_since
+entity_type: node
+bundle: breakers
+label: 'Breaking since'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

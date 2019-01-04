@@ -1,0 +1,22 @@
+uuid: 8488420b-cbe9-4665-a5b8-b706b961cee3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.winners
+  module:
+    - country
+id: node.winners.field_country
+field_name: field_country
+entity_type: node
+bundle: winners
+label: Country
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  selectable_countries: {  }
+field_type: country

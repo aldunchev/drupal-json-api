@@ -1,0 +1,9 @@
+uuid: 5a40ac6e-2f65-4517-91a3-d4f1a3ca1c26
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Categories for breakers'
+hierarchy: 0
+weight: 0

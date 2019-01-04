@@ -1,0 +1,18 @@
+uuid: bcbf8265-6db6-47fe-b1ed-173abf8d7ded
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.winners
+id: node.winners.title
+field_name: title
+entity_type: node
+bundle: winners
+label: 'Admin Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

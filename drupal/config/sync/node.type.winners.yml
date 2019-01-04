@@ -1,0 +1,17 @@
+uuid: d2a49c33-894b-4413-a40c-ab92d6435ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Winners
+type: winners
+description: 'Create a BC One finals winner'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

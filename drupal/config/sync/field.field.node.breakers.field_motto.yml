@@ -1,0 +1,21 @@
+uuid: 66a4d53e-158b-4d1a-99b4-aaeb3ca54616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_motto
+    - node.type.breakers
+  module:
+    - text
+id: node.breakers.field_motto
+field_name: field_motto
+entity_type: node
+bundle: breakers
+label: Motto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,23 @@
+uuid: b9aa2592-dbb3-40ed-8d2a-336ab4c64d1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook
+    - node.type.breakers
+  module:
+    - link
+id: node.breakers.field_facebook
+field_name: field_facebook
+entity_type: node
+bundle: breakers
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

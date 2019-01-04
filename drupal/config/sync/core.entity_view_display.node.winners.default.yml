@@ -1,0 +1,64 @@
+uuid: a124889b-0134-45eb-916b-0ee142ff532c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.winners.field_city
+    - field.field.node.winners.field_country
+    - field.field.node.winners.field_event_title
+    - field.field.node.winners.field_event_year
+    - field.field.node.winners.field_winner
+    - node.type.winners
+  module:
+    - country
+    - user
+id: node.winners.default
+targetEntityType: node
+bundle: winners
+mode: default
+content:
+  field_city:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_country:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
+    region: content
+  field_event_title:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_event_year:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_winner:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,157 @@
+uuid: 63d6eef0-047a-40f6-9261-5c5c06a97b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.breakers.field_biography
+    - field.field.node.breakers.field_breaking_since
+    - field.field.node.breakers.field_career_highlights
+    - field.field.node.breakers.field_categories
+    - field.field.node.breakers.field_country
+    - field.field.node.breakers.field_crew
+    - field.field.node.breakers.field_date
+    - field.field.node.breakers.field_facebook
+    - field.field.node.breakers.field_gender
+    - field.field.node.breakers.field_motto
+    - field.field.node.breakers.field_name
+    - field.field.node.breakers.field_picture
+    - field.field.node.breakers.field_website
+    - field.field.node.breakers.field_winner_picture
+    - node.type.breakers
+  module:
+    - country
+    - datetime
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.breakers.default
+targetEntityType: node
+bundle: breakers
+mode: default
+content:
+  field_biography:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_breaking_since:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_career_highlights:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_categories:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_country:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
+    region: content
+  field_crew:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_facebook:
+    weight: 113
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_gender:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_motto:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_picture:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_website:
+    weight: 110
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_winner_picture:
+    weight: 114
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: d9818e47-e069-42a0-9bf0-8e81703d1a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_career_highlights
+    - node.type.breakers
+  module:
+    - text
+id: node.breakers.field_career_highlights
+field_name: field_career_highlights
+entity_type: node
+bundle: breakers
+label: 'Career Highlights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

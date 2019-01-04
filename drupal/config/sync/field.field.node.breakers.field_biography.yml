@@ -1,0 +1,21 @@
+uuid: b0980b6e-7565-406e-9078-e2298b523da4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - node.type.breakers
+  module:
+    - text
+id: node.breakers.field_biography
+field_name: field_biography
+entity_type: node
+bundle: breakers
+label: Biography
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

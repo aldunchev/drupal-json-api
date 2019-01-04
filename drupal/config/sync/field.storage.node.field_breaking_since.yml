@@ -1,0 +1,21 @@
+uuid: 5d7068be-f9c7-4812-9302-ad02c930d51c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_breaking_since
+field_name: field_breaking_since
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,72 @@
+uuid: ae309746-797a-4f2f-9fe5-0f2629cee947
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.winners.field_city
+    - field.field.node.winners.field_country
+    - field.field.node.winners.field_event_title
+    - field.field.node.winners.field_event_year
+    - field.field.node.winners.field_winner
+    - node.type.winners
+  module:
+    - country
+id: node.winners.default
+targetEntityType: node
+bundle: winners
+mode: default
+content:
+  field_city:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: country_default
+    region: content
+  field_event_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_event_year:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_winner:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

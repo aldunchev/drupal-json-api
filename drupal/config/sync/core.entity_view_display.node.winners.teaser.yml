@@ -1,0 +1,30 @@
+uuid: 981ce2bd-be7e-47a7-82ad-c2535b92222e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.winners.field_city
+    - field.field.node.winners.field_country
+    - field.field.node.winners.field_event_title
+    - field.field.node.winners.field_event_year
+    - field.field.node.winners.field_winner
+    - node.type.winners
+  module:
+    - user
+id: node.winners.teaser
+targetEntityType: node
+bundle: winners
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_city: true
+  field_country: true
+  field_event_title: true
+  field_event_year: true
+  field_winner: true

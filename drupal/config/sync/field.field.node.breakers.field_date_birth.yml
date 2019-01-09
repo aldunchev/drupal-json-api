@@ -1,14 +1,12 @@
-uuid: d2f30f3d-ea7b-4846-974d-2407f8e108e0
+uuid: 054c7560-6c97-43b7-8a78-58e2a66eb712
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_date
+    - field.storage.node.field_date_birth
     - node.type.breakers
-  module:
-    - datetime
-id: node.breakers.field_date
-field_name: field_date
+id: node.breakers.field_date_birth
+field_name: field_date_birth
 entity_type: node
 bundle: breakers
 label: 'Date of Birth'
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: string

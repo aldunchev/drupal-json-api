@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.breakers.field_categories
     - field.field.node.breakers.field_country
     - field.field.node.breakers.field_crew
-    - field.field.node.breakers.field_date
+    - field.field.node.breakers.field_date_birth
     - field.field.node.breakers.field_facebook
     - field.field.node.breakers.field_gender
     - field.field.node.breakers.field_motto
@@ -21,7 +21,6 @@ dependencies:
     - node.type.breakers
   module:
     - country
-    - datetime
     - field_group
     - image
     - link
@@ -32,8 +31,8 @@ third_party_settings:
       children:
         - title
         - field_name
-        - field_date
         - field_country
+        - field_date_birth
         - field_crew
         - field_motto
         - field_breaking_since
@@ -44,11 +43,12 @@ third_party_settings:
       weight: 1
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
+        label: 'Personal info'
+        formatter: open
         description: ''
         required_fields: true
+        id: ''
+        classes: ''
       label: 'Personal info'
     group_pictures:
       children:
@@ -140,11 +140,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_date:
-    weight: 2
-    settings: {  }
+  field_date_birth:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: string_textfield
     region: content
   field_facebook:
     weight: 9

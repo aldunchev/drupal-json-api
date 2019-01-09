@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.breakers.field_categories
     - field.field.node.breakers.field_country
     - field.field.node.breakers.field_crew
-    - field.field.node.breakers.field_date
+    - field.field.node.breakers.field_date_birth
     - field.field.node.breakers.field_facebook
     - field.field.node.breakers.field_gender
     - field.field.node.breakers.field_motto
@@ -20,7 +20,6 @@ dependencies:
     - node.type.breakers
   module:
     - country
-    - datetime
     - image
     - link
     - options
@@ -76,14 +75,13 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_date:
-    weight: 103
+  field_date_birth:
+    weight: 115
     label: above
     settings:
-      format_type: medium
-      timezone_override: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: datetime_default
+    type: string
     region: content
   field_facebook:
     weight: 113
@@ -151,7 +149,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

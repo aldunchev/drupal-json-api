@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Breakers
 type: breakers
-description: 'Add a BC One breaker with the relevant data.'
+description: 'Create a BC One breaker with the relevant data.'
 help: ''
 new_revision: true
 preview_mode: 1

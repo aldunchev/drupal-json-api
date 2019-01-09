@@ -1,0 +1,15 @@
+uuid: ad37a770-e3ba-44f8-83ae-2216b543e7ff
+langcode: en
+status: true
+dependencies: {  }
+name: grid_item
+label: 'Grid Item'
+effects:
+  b4f1d0ca-417f-4a71-93fa-a81f22e873cc:
+    uuid: b4f1d0ca-417f-4a71-93fa-a81f22e873cc
+    id: image_scale
+    weight: 1
+    data:
+      width: 310
+      height: null
+      upscale: false

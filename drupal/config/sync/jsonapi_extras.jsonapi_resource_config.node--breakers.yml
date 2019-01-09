@@ -1,9 +1,15 @@
-uuid: 54ee6239-3f87-4dec-a5e9-f0f00a1d6c33
+uuid: 9b3da479-b39d-4212-a6c2-71e880add234
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.breakers
+  module:
+    - jsonapi_defaults
+third_party_settings:
+  jsonapi_defaults:
+    default_include:
+      - field_categories
 id: node--breakers
 disabled: false
 path: breakers
@@ -159,9 +165,9 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  field_date:
-    fieldName: field_date
-    publicName: field_date
+  field_date_birth:
+    fieldName: field_date_birth
+    publicName: field_date_birth
     enhancer:
       id: ''
     disabled: false

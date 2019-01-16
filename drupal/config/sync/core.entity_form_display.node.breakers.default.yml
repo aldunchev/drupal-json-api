@@ -128,9 +128,12 @@ content:
     region: content
   field_country:
     weight: 3
-    settings: {  }
+    settings:
+      size: '60'
+      placeholder: 'Start typing a country name ...'
+      autocomplete_route_name: country.autocomplete
     third_party_settings: {  }
-    type: country_default
+    type: country_autocomplete
     region: content
   field_crew:
     weight: 4
